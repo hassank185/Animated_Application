@@ -20,10 +20,12 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
+      extendBody: true,
       body: HomePage(),
       bottomNavigationBar: Container(
         padding: EdgeInsets.all(12),
-        margin: EdgeInsets.symmetric(horizontal: 24),
+        margin: EdgeInsets.symmetric(horizontal: 24,vertical: 10),
         decoration: BoxDecoration(color: backgroundColor2.withOpacity(0.8), borderRadius: BorderRadius.all(Radius.circular(24))),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

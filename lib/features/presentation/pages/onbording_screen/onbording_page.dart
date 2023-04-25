@@ -165,6 +165,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
   Future<Object?> customSignInDialog(BuildContext context, {required ValueChanged onClosed}) {
     return showGeneralDialog(
       barrierDismissible: true,
+
       barrierLabel: "Sign In",
       context: context,
       transitionDuration: Duration(milliseconds: 800),

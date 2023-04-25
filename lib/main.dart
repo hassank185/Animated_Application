@@ -1,4 +1,5 @@
 import 'package:animated_application/features/presentation/pages/onbording_screen/onbording_page.dart';
+import 'package:animated_application/rive_animations/animations/side_menu.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
           errorBorder: defaultInputBorder,
         ),
       ),
-      home: OnboardingPage(),
+      home: SideMenu(),
     );
   }
 }
